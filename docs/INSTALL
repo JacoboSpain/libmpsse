@@ -15,6 +15,9 @@ INSTALLATION
 
 		$ autoreconf --install
 		$ ./configure
+	for windows with MINGW:
+		$  sed -i.bak -e "s/\(allow_undefined=\)yes/\1no/" libtool
+		
 		$ make
 		# make install
 
